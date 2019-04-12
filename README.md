@@ -1,4 +1,4 @@
-# whsitle #
+# whsitle
 whsitle使用笔记
 ## 全局安装（局部安装貌似无效）  
 cnpm install -g whistle
@@ -10,8 +10,8 @@ cnpm install -g whistle
 ![](/images/b.png) 
 配置与电脑局域网手机代理，ip为局域网下电脑ip，端口号为whistle启动的端口号  
 <div align=center><img width="50%" src="/images/c.jpg"/></div> 
-<p>电脑浏览器访问：<a src=#>http://127.0.0.1:whistle启动的端口号</a>开始调试</p>
-## whsitle多代理  ##
+<div>电脑浏览器访问：<a src=#>http://127.0.0.1:whistle启动的端口号</a>开始调试</div>  
+## whsitle多代理  
 whsitle浏览器打开之后默认有一个default代理，可以自行选择创建多个代理，default优先级最低，其他自上而下优先级一次递减。  
 ![截图](/images/f.jpg) 
 ## 入门级使用规则  
