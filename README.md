@@ -8,13 +8,14 @@ cnpm install -g whistle
 ## 代理设置   
 选择代理模式，输入本地ip以及whistle启动的端口号   
 ![](/images/b.png) 
-配置与电脑局域网手机代理，ip为局域网下电脑ip，端口号为whistle启动的端口号  
-电脑浏览器访问：http://127.0.0.1:whistle启动的端口号开始调试  
+配置与电脑局域网手机代理，ip为局域网下电脑ip，端口号为whistle启动的端口号   
 <div align=center><img width="50%" src="/images/c.jpg"/></div>
- 
+
+电脑浏览器访问：http://127.0.0.1:whistle启动的端口号  
+开始调试   
 ## whsitle多代理  
 whsitle浏览器打开之后默认有一个default代理，可以自行选择创建多个代理，default优先级最低，其他自上而下优先级一次递减。  
-![截图](/images/f.jpg) 
+![截图](/images/f.png) 
 ## 入门级使用规则  
 http:www.baidu.com/index?a=1 127.0.0.1:8080 //请求转发到本地  
 http:www.baidu.com/js/a.js file://E:\js\a.js //替换静态资源  
