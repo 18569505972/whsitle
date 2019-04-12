@@ -15,12 +15,7 @@ cnpm install -g whistle
 whsitle浏览器打开之后默认有一个default代理，可以自行选择创建多个代理，default优先级最低，其他自上而下优先级一次递减。  
 ![截图](/images/f.jpg) 
 ## 入门级使用规则  
-http:www.baidu.com/index?a=1 127.0.0.1:8080 //请求转发到本地  
-http:www.baidu.com/js/a.js file://E:\js\a.js //替换静态资源  
-http:www.baidu.com/index?a=1 www.aliexpress.com/index?a=1 //替换请求  
-http:www.baidu.com/index.html weinre://test //调试页面dom  
-http://www.baidu.com/ log://  //查看页面控制台信息  
-http://www.baidu.com js://{vConsole.js} // 注入js文件，会自动在html中插入script标签  
+666注入js文件，会自动在html中插入script标签  
 ## 命令
 ### 启动
 w2 start，启用默认端口8899  
