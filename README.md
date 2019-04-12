@@ -10,7 +10,7 @@ cnpm install -g whistle
 ![](/images/b.png) 
 配置与电脑局域网手机代理，ip为局域网下电脑ip，端口号为whistle启动的端口号  
 <div align=center><img width="50%" src="/images/c.jpg"/></div> 
-电脑浏览器访问：http://127.0.0.1:whistle启动的端口号，开始调试<br>
+电脑浏览器访问：http://127.0.0.1:whistle启动的端口号，开始调试  
 ## whsitle多代理  
 whsitle浏览器打开之后默认有一个default代理，可以自行选择创建多个代理，default优先级最低，其他自上而下优先级一次递减。  
 ![截图](/images/f.jpg) 
