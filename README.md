@@ -21,24 +21,28 @@ cnpm install -g whistle
 whsitle浏览器打开之后默认有一个default代理，可以自行选择创建多个代理，default优先级最低，其他自上而下优先级一次递减。 
 
 ![截图](/images/f.png) 
+## 设置抓取https请求
+使用手机扫码安装即可添加信任凭据，拦截https请求  
+![截图](/images/g.png)  
 ## 入门级使用规则  
-### 请求转发到本地
+### 请求链接匹配规则
+#### 请求转发到本地
 ``http:www.baidu.com/index?a=1    127.0.0.1:8080  ``
-### 替换静态资源
+#### 替换静态资源
 ``http:www.baidu.com/js/a.js    file://E:\js\a.js ``  
 ### 替换请求
 ``http://www.baidu.com/index?a=1    http://www.aliexpress.com/index?a=1``
-### 调试页面dom
+#### 调试页面dom
 ``http://www.baidu.com/index.html    weinre://test``
-### 查看页面控制台打印信息 
+#### 查看页面控制台打印信息 
 ``http://www.baidu.com/    log://``
-### 注入js
+#### 注入js
 若为抓取链接为html请求，则自动在html尾部添加script标签，注入js  
 ``http://www.baidu.com    js://E:\js\a.js``
-### 注入css
+#### 注入css
 若为抓取链接为html请求，则自动在html尾部添加style标签，注入样式表    
 ``http://www.baidu.com    css://E:\css\a.css``
-### 注入html
+#### 注入html
 ``http://www.baidu.com   html://E:\html\a.html``
 ## 命令
 ### 启动
