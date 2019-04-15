@@ -90,7 +90,7 @@ $:以某字符串结束
   https-proxy://127.0.0.1:8888
 ```
 ### enable
-params(开启参数):https(开启拦截https)、hide(隐藏匹配请求)、
+params(开启参数):https(开启拦截https)、hide(隐藏匹配请求)  
 ``www.baidu.com    enable://params``
 ### disable
 params(禁用参数):cache(请求缓存)、cookie(请求或响应cookie)、ua(删除ua)、referer(删除referer)、csp(删除scp策略)、timeout(禁用whistle内部请求超时时间)、301(将301转为302)、intercept(禁用https拦截)、dnsCache(禁用dns缓存)  
@@ -116,8 +116,8 @@ www.baidu.com下的请求状态码修改为404
 ``www.baidu.com    redirect:www.taobao.com``
 ### reqMerge、resMerge
 修改get请求参数为a=1&b=2  
-``www.baidu.com    reqMerge:(a=1&b=2)`` 
-修改响应JSON数据 
+``www.baidu.com    reqMerge:(a=1&b=2)``  
+修改响应JSON数据  
 ``www.baidu.com    resMerge:(a=1&b=2)``  
 浏览器接收解析为：{a:1,b:2}
 ### reqScript、resScript
@@ -143,17 +143,17 @@ if (/(?:^|&)prefix=([^&]+)/.test(body)) {
 通过脚本批量设置响应（同上）  
 ### reqType、resType（content-type）
 修改请求内容类型  
-``www.baidu.com    reqType://text/html`` 
+``www.baidu.com    reqType://text/html``  
 修改响应内容类型   
 ``www.baidu.com    resType://text/html`` 
 ### reqCharset、resCharset（charset）
 修改请求编码类型  
-``www.baidu.com    reqCharset://utf-8`` 
+``www.baidu.com    reqCharset://utf-8``  
 修改响应编码类型   
 ``www.baidu.com    resCharset://utf-8`` 
 ### reqCookies、resCookies（cookie）
 修改请求cookie  
-``www.baidu.com    reqCookies://{cookie}`` 
+``www.baidu.com    reqCookies://{cookie}``  
 修改响应cookie   
 ``www.baidu.com    resCharset://{cookie}``  
 cookie.json  
