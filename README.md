@@ -1,12 +1,15 @@
 # whsitle
-whsitle使用笔记
-## 全局安装（局部安装貌似无效）  
+whsitle前端抓包工具的使用
+## 使用目的
+1. 混合开发时，浏览器无法模拟APP环境，无法迅速定位。  
+2. 移动端某种型号系统版本的手机、某类浏览器环境的兼容性问题，无法迅速定位。  
+3. 很多线上疑难bug无法像开发环境一样自由的跟踪调试。  
+
+## 准备工作  
+### 使用环境
+node v0.10.0+
+### 全局安装（局部安装貌似无效）
 cnpm install -g whistle
-## 安装浏览器代理插件SwitchyOmega  
-[SwitchyOmega下载地址](https://github.com/FelisCatus/SwitchyOmega/releases)  
-
-![以下位置](/images/a.png) 
-
 ## 基本命令
 ### 启动
 w2 start，启用默认端口8899  
@@ -25,9 +28,6 @@ w2 stop
 ![截图](/images/j.png)
 
 ## 代理设置   
-选择代理模式，输入本地ip以及whistle启动的端口号   
-
-![](/images/b.png) 
 配置与电脑局域网手机代理，ip为局域网下电脑ip，端口号为whistle启动的端口号   
 
 <div align=center><img width="300" src="/images/c.jpg"/></div>
@@ -171,6 +171,8 @@ password:admin
 把指定内容加到请求或响应内容后面
 ### reqReplace、resReplace
 替换类型为application/x-www-form-urlencoded)、urlencoded、html、json、xml、text等的内容
+### reqWrite、resWrite
+将请求或响应写入本地文件。
 ### htmlPrepend、cssPrepend、jsPrepend
 htmlPrepend:在content-type为html的响应内容前插入html  
 cssPrepend：在content-type为html、css的响应内容前插入style样式  
